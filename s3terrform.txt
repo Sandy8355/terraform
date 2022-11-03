@@ -1,0 +1,15 @@
+resource "aws_s3_bucket" "example"{
+bucket="terraform-test-bucket"
+acl="public-read"
+tags={
+name="first bucket"
+Environment ="Devops"
+}
+}
+
+
+provider "aws" {
+access_key="AKIAZ3EIZI7SYGTKIF7A"
+secret_key ="CycPr+OOlJthdxdYjny1GqjIBT0+rNJLKzq4U82e"
+region="south-1"
+}
